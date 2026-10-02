@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genesys App — Sistema de gestión para tiendas de tecnología</title>
+  <meta name="description" content="Genesys App es el sistema de gestión diseñado para tiendas de tecnología. Stock, ventas, compradores, estadísticas y más." />
+  <meta name="author" content="Genesys" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230d6efd'/><text y='.88em' font-size='72' x='14' fill='white' font-family='Arial Black' font-weight='900'>G</text></svg>" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS Custom -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="brand-mark">G</div>
+        <span class="brand-text">Genesys <span>App</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#funciones">Funciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#como-funciona">Cómo funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#precios">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <a href="https://exodocell.netlify.app" class="btn btn-nav-login" target="_blank">Ingresar</a>
+          <a href="https://api.whatsapp.com/send?phone=2604104160&text=Hola! Quiero probar Genesys App gratis" class="btn btn-nav-cta" target="_blank">Empezar gratis</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6 fade-up">
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            Sistema de gestión para tiendas de tecnología
+          </div>
+
+          <h1>
+            Controlá tu negocio<br />
+            <span class="blue">desde un solo lugar</span>
+          </h1>
+
+          <p class="lead">
+            Stock, ventas, compradores, gastos y estadísticas. Todo lo que necesitás para gestionar tu tienda, sin planillas ni papeles.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Hola! Quiero probar Genesys App 14 días gratis"
+               class="btn btn-primary btn-lg px-4 py-3 fw-semibold"
+               style="border-radius:12px; box-shadow: 0 4px 20px rgba(13,110,253,0.3);"
+               target="_blank">
+              <i class="bi bi-rocket-takeoff me-2"></i> Probalo gratis 14 días
+            </a>
+            <a href="#funciones" class="btn btn-outline-secondary btn-lg px-4 py-3 fw-semibold" style="border-radius:12px;">
+              Ver funciones <i class="bi bi-arrow-down ms-1"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-num">+25</div>
+              <div class="hero-stat-label">negocios activos</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">100%</div>
+              <div class="hero-stat-label">desde el navegador</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">0hs</div>
+              <div class="hero-stat-label">de instalación</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 fade-up" style="transition-delay: 0.15s;">
+          <div class="mockup-wrap">
+            <div class="mockup-glow"></div>
+            <div class="mockup-frame">
+              <div class="mockup-bar">
+                <div class="mockup-dots">
+                  <div class="mockup-dot"></div>
+                  <div class="mockup-dot"></div>
+                  <div class="mockup-dot"></div>
+                </div>
+                <div class="mockup-url-bar">app.genesys.com.ar</div>
+              </div>
+              <div class="mockup-body">
+                <!-- Sidebar -->
+                <div class="mockup-sidebar">
+                  <div class="mockup-logo-row">
+                    <div class="mockup-logo-icon">É</div>
+                    <div>
+                      <div class="mockup-logo-name">ÉXODO</div>
+                      <div class="mockup-logo-sub">Gestión</div>
+                    </div>
+                  </div>
+                  <div class="mockup-nav-item active"><div class="mockup-nav-dot"></div>Panel</div>
+                  <div class="mockup-nav-item"><div class="mockup-nav-dot"></div>Stock</div>
+                  <div class="mockup-nav-item"><div class="mockup-nav-dot"></div>Compradores</div>
+                  <div class="mockup-nav-item"><div class="mockup-nav-dot"></div>Ventas</div>
+                  <div class="mockup-nav-item"><div class="mockup-nav-dot"></div>Gastos</div>
+                  <div class="mockup-nav-item"><div class="mockup-nav-dot"></div>Estadísticas</div>
+                </div>
+                <!-- Main -->
+                <div class="mockup-main">
+                  <div class="mockup-title">Panel Principal</div>
+                  <div class="mockup-sub">Resumen general · Octubre 2026</div>
+                  <div class="mockup-kpis">
+                    <div class="mockup-kpi mockup-kpi-0">
+                      <div class="mkpi-label">Este mes</div>
+                      <div class="mkpi-val">$19.500</div>
+                      <div class="mkpi-sub">2 ventas · $35K ingresos</div>
+                    </div>
+                    <div class="mockup-kpi">
+                      <div class="mkpi-label">Ganancia neta</div>
+                      <div class="mkpi-val" style="color:var(--blue);font-size:12px">$1.526.000</div>
+                      <div class="mkpi-sub">Margen 11.6%</div>
+                    </div>
+                    <div class="mockup-kpi">
+                      <div class="mkpi-label">Ventas</div>
+                      <div class="mkpi-val">25</div>
+                      <div class="mkpi-sub">ticket $524k</div>
+                    </div>
+                    <div class="mockup-kpi">
+                      <div class="mkpi-label">Stock</div>
+                      <div class="mkpi-val">17</div>
+                      <div class="mkpi-sub">18 vendidos</div>
+                    </div>
+                  </div>
+                  <div class="mockup-row">
+                    <div class="mockup-card-inner">
+                      <div class="mkcard-title">Últimas ventas</div>
+                      <div class="mkcard-item">
+                        <div class="mkcard-img"></div>
+                        <div>
+                          <div class="mkcard-name">iPhone 14 Pro</div>
+                          <div class="mkcard-meta">bautista · 23/09</div>
+                        </div>
+                        <div class="mkcard-price">$790k</div>
+                      </div>
+                      <div class="mkcard-item">
+                        <div class="mkcard-img"></div>
+                        <div>
+                          <div class="mkcard-name">AirPods Pro 2</div>
+                          <div class="mkcard-meta">florencia · 17/09</div>
+                        </div>
+                        <div class="mkcard-price">$85k</div>
+                      </div>
+                      <div class="mkcard-item">
+                        <div class="mkcard-img"></div>
+                        <div>
+                          <div class="mkcard-name">iPhone 13 Pro</div>
+                          <div class="mkcard-meta">sebastián · 10/09</div>
+                        </div>
+                        <div class="mkcard-price">$650k</div>
+                      </div>
+                    </div>
+                    <div class="mockup-card-inner">
+                      <div class="mkcard-title">Origen clientes</div>
+                      <div class="mksource-item">
+                        <div class="mksource-row"><span>Facebook</span><span style="color:#1877f2">44%</span></div>
+                        <div class="mksource-bar-wrap"><div class="mksource-bar" style="width:44%;background:linear-gradient(90deg,#1877f2,#42a5f5)"></div></div>
+                      </div>
+                      <div class="mksource-item">
+                        <div class="mksource-row"><span>Recomendación</span><span style="color:#7c3aed">32%</span></div>
+                        <div class="mksource-bar-wrap"><div class="mksource-bar" style="width:32%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+                      </div>
+                      <div class="mksource-item">
+                        <div class="mksource-row"><span>WhatsApp</span><span style="color:#25d366">12%</span></div>
+                        <div class="mksource-bar-wrap"><div class="mksource-bar" style="width:12%;background:linear-gradient(90deg,#25d366,#128c7e)"></div></div>
+                      </div>
+                      <div class="mksource-item">
+                        <div class="mksource-row"><span>Instagram</span><span style="color:#e1306c">8%</span></div>
+                        <div class="mksource-bar-wrap"><div class="mksource-bar" style="width:8%;background:linear-gradient(90deg,#f09433,#dc2743,#bc1888)"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FEATURES ══ -->
+  <section class="features-section" id="funciones">
+    <div class="container">
+      <div class="row mb-5 fade-up">
+        <div class="col-lg-6">
+          <div class="section-badge">Funciones</div>
+          <h2 class="section-title">Todo lo que necesita<br />tu negocio</h2>
+          <p class="section-subtitle">Diseñado específicamente para tiendas de tecnología. Sin funciones de más, sin complicaciones.</p>
+        </div>
+      </div>
+      <div class="row g-4 fade-up">
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <div class="feature-title">Control de stock</div>
+            <p class="feature-desc">Cargá cada producto con foto, IMEI, batería, color y precio. Recibí alertas cuando el stock está bajo. Compatible con iPhones, accesorios, parlantes y más.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <div class="feature-title">Registro de ventas</div>
+            <p class="feature-desc">Registrá cada venta con forma de pago, cuotas, garantía y origen del cliente. Generá recibos en PDF con un clic. Exportá todo a Excel.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <div class="feature-title">Base de compradores</div>
+            <p class="feature-desc">Guardá el historial de cada cliente con sus compras, datos de contacto y DNI. Sabé cuánto gastó y qué compró cada uno.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <div class="feature-title">Estadísticas en tiempo real</div>
+            <p class="feature-desc">Ganancias por mes, modelos más vendidos, origen de clientes y formas de pago. Tomá decisiones con datos, no con suposiciones.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon">💸</div>
+            <div class="feature-title">Control de gastos</div>
+            <p class="feature-desc">Registrá todos tus egresos por categoría. El sistema calcula automáticamente tu ganancia neta descontando los gastos operativos.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon">👨‍💼</div>
+            <div class="feature-title">Roles y usuarios</div>
+            <p class="feature-desc">Invitá a tu equipo con roles diferenciados: Administrador, Vendedor o Solo lectura. Cada uno ve lo que necesita ver.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CÓMO FUNCIONA ══ -->
+  <section class="how-section" id="como-funciona">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <div class="section-badge" style="justify-content:center;">Cómo funciona</div>
+        <h2 class="section-title">Empezás en minutos</h2>
+        <p class="section-subtitle mx-auto text-center">Sin instalaciones, sin técnicos. Solo abrís el navegador y listo.</p>
+      </div>
+      <div class="row g-4 position-relative fade-up">
+        <!-- línea conectora desktop -->
+        <div class="d-none d-lg-block" style="position:absolute;top:28px;left:17%;right:17%;height:1px;background:var(--border);z-index:0;"></div>
+        <div class="col-6 col-lg-3">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-title">Contactanos</div>
+            <p class="step-desc">Escribinos por WhatsApp y te activamos la cuenta de tu negocio en el momento.</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-title">Configurás tu negocio</div>
+            <p class="step-desc">Ponés el nombre, logo y los parámetros básicos. Tarda menos de 5 minutos.</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-title">Cargás tu stock</div>
+            <p class="step-desc">Agregás tus productos con fotos y precios. El sistema queda listo para operar.</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <div class="step-title">Empezás a vender</div>
+            <p class="step-desc">Registrás cada venta, generás recibos y ves cómo crece tu negocio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PRICING ══ -->
+  <section class="pricing-section" id="precios">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <div class="section-badge" style="justify-content:center;">Precios</div>
+        <h2 class="section-title">Simple y sin sorpresas</h2>
+        <p class="section-subtitle mx-auto">14 días de prueba gratis. Sin tarjeta de crédito.</p>
+      </div>
+      <div class="row g-4 justify-content-center fade-up">
+
+        <!-- Básico -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card">
+            <div class="pricing-name">Básico</div>
+            <div class="pricing-price">$8.000 <span class="currency">ARS</span></div>
+            <div class="pricing-period">por mes · facturación mensual</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Stock ilimitado</li>
+              <li><span class="check">✓</span> Registro de ventas</li>
+              <li><span class="check">✓</span> Control de gastos</li>
+              <li><span class="check">✓</span> Estadísticas básicas</li>
+              <li><span class="check">✓</span> 1 usuario</li>
+              <li><span class="check">✓</span> Recibo PDF</li>
+              <li class="no"><span class="check">×</span> Exportar a Excel</li>
+              <li class="no"><span class="check">×</span> Múltiples usuarios</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Quiero el plan Básico de Genesys App"
+               class="btn btn-outline-primary w-100 py-3 fw-semibold" style="border-radius:10px;"
+               target="_blank">Empezar gratis</a>
+          </div>
+        </div>
+
+        <!-- Pro -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card featured">
+            <div class="pricing-badge">⭐ Más popular</div>
+            <div class="pricing-name">Pro</div>
+            <div class="pricing-price">$14.000 <span class="currency">ARS</span></div>
+            <div class="pricing-period">por mes · facturación mensual</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Todo lo del plan Básico</li>
+              <li><span class="check">✓</span> Exportar a Excel</li>
+              <li><span class="check">✓</span> Estadísticas avanzadas</li>
+              <li><span class="check">✓</span> Hasta 3 usuarios</li>
+              <li><span class="check">✓</span> Roles y permisos</li>
+              <li><span class="check">✓</span> Alertas de stock bajo</li>
+              <li><span class="check">✓</span> Alertas de garantías</li>
+              <li><span class="check">✓</span> Soporte prioritario</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Quiero el plan Pro de Genesys App"
+               class="btn btn-primary w-100 py-3 fw-semibold" style="border-radius:10px;box-shadow:0 4px 20px rgba(13,110,253,0.3);"
+               target="_blank">Empezar gratis</a>
+          </div>
+        </div>
+
+        <!-- Empresa -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pricing-card">
+            <div class="pricing-name">Empresa</div>
+            <div class="pricing-price" style="font-size:28px">A medida</div>
+            <div class="pricing-period">según necesidad</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Todo lo del plan Pro</li>
+              <li><span class="check">✓</span> Usuarios ilimitados</li>
+              <li><span class="check">✓</span> Múltiples sucursales</li>
+              <li><span class="check">✓</span> Integración con tu web</li>
+              <li><span class="check">✓</span> Funciones a medida</li>
+              <li><span class="check">✓</span> Capacitación incluida</li>
+              <li><span class="check">✓</span> SLA garantizado</li>
+              <li><span class="check">✓</span> Soporte dedicado</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Quiero información del plan Empresa de Genesys App"
+               class="btn btn-outline-secondary w-100 py-3 fw-semibold" style="border-radius:10px;"
+               target="_blank">Consultar precio</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FAQ ══ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <div class="section-badge" style="justify-content:center;">FAQ</div>
+        <h2 class="section-title">Preguntas frecuentes</h2>
+      </div>
+      <div class="row justify-content-center fade-up">
+        <div class="col-lg-7">
+          <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  ¿Necesito instalar algo?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">No. Genesys App funciona 100% desde el navegador. Funciona en computadora, tablet y celular sin instalar nada.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  ¿Mis datos están seguros?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Sí. Usamos Firebase de Google como base de datos, con encriptación y reglas de seguridad. Cada negocio tiene sus datos completamente aislados de los demás.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  ¿Puedo tener varios usuarios?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Desde el plan Pro podés invitar hasta 3 usuarios con diferentes roles: Administrador, Vendedor o Solo lectura. El plan Empresa tiene usuarios ilimitados.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  ¿Funciona para otros rubros además de tecnología?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Fue diseñado específicamente para tiendas de tecnología (iPhones, accesorios, etc.), pero puede adaptarse a cualquier negocio de compra-venta. Consultanos.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                  ¿Qué pasa si quiero cancelar?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Podés cancelar cuando quieras, sin cargos ni penalidades. Tus datos quedan disponibles para exportar durante 30 días después de cancelar.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                  ¿Ofrecen soporte?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Sí, por WhatsApp. El plan Pro tiene soporte prioritario con respuesta en menos de 24hs. El plan Empresa incluye soporte dedicado.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA FINAL ══ -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="container text-center position-relative" style="z-index:1;">
+      <div class="row justify-content-center fade-up">
+        <div class="col-lg-7">
+          <h2>Tu negocio merece<br />herramientas profesionales</h2>
+          <p>Empezá hoy con 14 días gratis. Sin tarjeta de crédito, sin compromisos.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Hola! Quiero empezar a usar Genesys App"
+               class="btn btn-cta-white" target="_blank">
+              <i class="bi bi-whatsapp me-2"></i> Empezar ahora — es gratis
+            </a>
+            <a href="https://exodocell.netlify.app" class="btn btn-cta-outline" target="_blank">
+              Ver demo en vivo <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+          <p class="mt-4" style="font-size:13px;color:rgba(255,255,255,0.4);">
+            Desarrollado por <a href="https://genesys.com.ar" style="color:rgba(255,255,255,0.6);text-decoration:none;" target="_blank">Genesys</a> · San Rafael, Mendoza
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <a href="https://genesys.com.ar" class="d-flex align-items-center gap-2 text-decoration-none" target="_blank">
+          <div class="brand-mark" style="width:28px;height:28px;font-size:13px;">G</div>
+          <span class="footer-brand-text">Genesys <span>App</span></span>
+        </a>
+        <p>© 2026 Genesys · Todos los derechos reservados</p>
+        <div class="d-flex gap-4">
+          <a href="https://api.whatsapp.com/send?phone=2604104160" target="_blank">
+            <i class="bi bi-whatsapp me-1"></i>WhatsApp
+          </a>
+          <a href="https://www.instagram.com/genesys.web/" target="_blank">
+            <i class="bi bi-instagram me-1"></i>Instagram
+          </a>
+          <a href="mailto:consultas@genesys.com.ar">
+            <i class="bi bi-envelope me-1"></i>Email
+          </a>
+          <a href="https://genesys.com.ar" target="_blank">
+            <i class="bi bi-globe me-1"></i>genesys.com.ar
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Custom -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
