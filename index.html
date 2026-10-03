@@ -634,7 +634,7 @@
       btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Creando cuenta...';
 
       try {
-        const res = await fetch('https://us-central1-exodo-bcd73.cloudfunctions.net/registerBusiness', {
+        const res = await fetch('https://registerbusiness-hzwvtl24ua-uc.a.run.app', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, password, businessName: negocio, plan: planSeleccionado }),
