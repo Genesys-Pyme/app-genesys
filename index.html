@@ -47,7 +47,7 @@
         </ul>
         <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
           <a href="https://exodocell.netlify.app" class="btn btn-nav-login" target="_blank">Ingresar</a>
-          <a href="https://api.whatsapp.com/send?phone=2604104160&text=Hola! Quiero probar Genesys App gratis" class="btn btn-nav-cta" target="_blank">Empezar gratis</a>
+          <button onclick="abrirRegistro('pyme')" class="btn btn-nav-cta">Empezar gratis</button>
         </div>
       </div>
     </div>
@@ -75,12 +75,11 @@
           </p>
 
           <div class="d-flex flex-wrap gap-3">
-            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Hola! Quiero probar Genesys App 14 días gratis"
+            <button onclick="abrirRegistro('pyme')"
                class="btn btn-primary btn-lg px-4 py-3 fw-semibold"
-               style="border-radius:12px; box-shadow: 0 4px 20px rgba(13,110,253,0.3);"
-               target="_blank">
+               style="border-radius:12px; box-shadow: 0 4px 20px rgba(13,110,253,0.3);">
               <i class="bi bi-rocket-takeoff me-2"></i> Probalo gratis 14 días
-            </a>
+            </button>
             <a href="#funciones" class="btn btn-outline-secondary btn-lg px-4 py-3 fw-semibold" style="border-radius:12px;">
               Ver funciones <i class="bi bi-arrow-down ms-1"></i>
             </a>
@@ -166,7 +165,7 @@
                         <div class="mkcard-img"></div>
                         <div>
                           <div class="mkcard-name">iPhone 14 Pro</div>
-                          <div class="mkcard-meta">bautista · 23/09</div>
+                          <div class="mkcard-meta">Juan · 23/09</div>
                         </div>
                         <div class="mkcard-price">$790k</div>
                       </div>
@@ -174,7 +173,7 @@
                         <div class="mkcard-img"></div>
                         <div>
                           <div class="mkcard-name">AirPods Pro 2</div>
-                          <div class="mkcard-meta">florencia · 17/09</div>
+                          <div class="mkcard-meta">Jorge · 17/09</div>
                         </div>
                         <div class="mkcard-price">$85k</div>
                       </div>
@@ -182,7 +181,7 @@
                         <div class="mkcard-img"></div>
                         <div>
                           <div class="mkcard-name">iPhone 13 Pro</div>
-                          <div class="mkcard-meta">sebastián · 10/09</div>
+                          <div class="mkcard-meta">Luciana · 10/09</div>
                         </div>
                         <div class="mkcard-price">$650k</div>
                       </div>
@@ -327,11 +326,11 @@
       </div>
       <div class="row g-4 justify-content-center fade-up">
 
-        <!-- Básico -->
+        <!-- Pequeño Emprendedor -->
         <div class="col-md-6 col-lg-4">
           <div class="pricing-card">
-            <div class="pricing-name">Básico</div>
-            <div class="pricing-price">$8.000 <span class="currency">ARS</span></div>
+            <div class="pricing-name">Pequeño Emprendedor</div>
+            <div class="pricing-price">$20.000 <span class="currency">ARS</span></div>
             <div class="pricing-period">por mes · facturación mensual</div>
             <ul class="pricing-features">
               <li><span class="check">✓</span> Stock ilimitado</li>
@@ -343,21 +342,22 @@
               <li class="no"><span class="check">×</span> Exportar a Excel</li>
               <li class="no"><span class="check">×</span> Múltiples usuarios</li>
             </ul>
-            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Quiero el plan Básico de Genesys App"
-               class="btn btn-outline-primary w-100 py-3 fw-semibold" style="border-radius:10px;"
-               target="_blank">Empezar gratis</a>
+            <button onclick="abrirRegistro('emprendedor')"
+               class="btn btn-outline-primary w-100 py-3 fw-semibold" style="border-radius:10px;">
+               Empezar gratis — 14 días
+            </button>
           </div>
         </div>
 
-        <!-- Pro -->
+        <!-- Pyme -->
         <div class="col-md-6 col-lg-4">
           <div class="pricing-card featured">
             <div class="pricing-badge">⭐ Más popular</div>
-            <div class="pricing-name">Pro</div>
-            <div class="pricing-price">$14.000 <span class="currency">ARS</span></div>
+            <div class="pricing-name">Pyme</div>
+            <div class="pricing-price">$35.000 <span class="currency">ARS</span></div>
             <div class="pricing-period">por mes · facturación mensual</div>
             <ul class="pricing-features">
-              <li><span class="check">✓</span> Todo lo del plan Básico</li>
+              <li><span class="check">✓</span> Todo lo del plan anterior</li>
               <li><span class="check">✓</span> Exportar a Excel</li>
               <li><span class="check">✓</span> Estadísticas avanzadas</li>
               <li><span class="check">✓</span> Hasta 3 usuarios</li>
@@ -366,9 +366,10 @@
               <li><span class="check">✓</span> Alertas de garantías</li>
               <li><span class="check">✓</span> Soporte prioritario</li>
             </ul>
-            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Quiero el plan Pro de Genesys App"
-               class="btn btn-primary w-100 py-3 fw-semibold" style="border-radius:10px;box-shadow:0 4px 20px rgba(13,110,253,0.3);"
-               target="_blank">Empezar gratis</a>
+            <button onclick="abrirRegistro('pyme')"
+               class="btn btn-primary w-100 py-3 fw-semibold" style="border-radius:10px;box-shadow:0 4px 20px rgba(13,110,253,0.3);">
+               Empezar gratis — 14 días
+            </button>
           </div>
         </div>
 
@@ -376,10 +377,10 @@
         <div class="col-md-6 col-lg-4">
           <div class="pricing-card">
             <div class="pricing-name">Empresa</div>
-            <div class="pricing-price" style="font-size:28px">A medida</div>
-            <div class="pricing-period">según necesidad</div>
+            <div class="pricing-price">$60.000 <span class="currency">ARS</span></div>
+            <div class="pricing-period">por mes · facturación mensual</div>
             <ul class="pricing-features">
-              <li><span class="check">✓</span> Todo lo del plan Pro</li>
+              <li><span class="check">✓</span> Todo lo del plan Pyme</li>
               <li><span class="check">✓</span> Usuarios ilimitados</li>
               <li><span class="check">✓</span> Múltiples sucursales</li>
               <li><span class="check">✓</span> Integración con tu web</li>
@@ -388,9 +389,10 @@
               <li><span class="check">✓</span> SLA garantizado</li>
               <li><span class="check">✓</span> Soporte dedicado</li>
             </ul>
-            <a href="https://api.whatsapp.com/send?phone=2604104160&text=Quiero información del plan Empresa de Genesys App"
-               class="btn btn-outline-secondary w-100 py-3 fw-semibold" style="border-radius:10px;"
-               target="_blank">Consultar precio</a>
+            <button onclick="abrirRegistro('empresa')"
+               class="btn btn-outline-secondary w-100 py-3 fw-semibold" style="border-radius:10px;">
+               Empezar gratis — 14 días
+            </button>
           </div>
         </div>
 
@@ -533,8 +535,147 @@
     </div>
   </footer>
 
+  <!-- ══ MODAL DE REGISTRO ══ -->
+  <div class="modal fade" id="modalRegistro" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius:20px;border:1px solid var(--border);">
+        <div class="modal-header border-0 pb-0 px-4 pt-4">
+          <div>
+            <h5 class="modal-title fw-bold" style="font-family:'Space Grotesk',sans-serif;font-size:20px;">Crear tu cuenta</h5>
+            <p class="text-muted mb-0" style="font-size:13px;">14 días gratis · Sin tarjeta de crédito</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body px-4 py-3">
+
+          <!-- Badge del plan elegido -->
+          <div id="planBadge" class="mb-3 text-center">
+            <span class="badge" style="background:var(--blue-dim);color:var(--blue);font-size:13px;padding:6px 16px;border-radius:20px;border:1px solid rgba(13,110,253,0.2);">
+              Plan: <strong id="planNombre">Pyme</strong>
+            </span>
+          </div>
+
+          <div id="registroForm">
+            <div class="mb-3">
+              <label class="form-label fw-semibold" style="font-size:12px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text3);">Nombre del negocio</label>
+              <input type="text" id="regNegocio" class="form-control" placeholder="Ej: Mi Tienda Tech" style="border-radius:10px;padding:10px 14px;">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold" style="font-size:12px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text3);">Email</label>
+              <input type="email" id="regEmail" class="form-control" placeholder="tu@email.com" style="border-radius:10px;padding:10px 14px;">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold" style="font-size:12px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text3);">Contraseña</label>
+              <input type="password" id="regPassword" class="form-control" placeholder="mínimo 6 caracteres" style="border-radius:10px;padding:10px 14px;">
+            </div>
+            <div id="regError" class="alert alert-danger py-2 px-3 d-none" style="border-radius:10px;font-size:13px;"></div>
+            <button id="btnRegistrar" class="btn btn-primary w-100 py-3 fw-semibold" style="border-radius:10px;font-size:15px;" onclick="registrar()">
+              Crear cuenta gratis
+            </button>
+            <p class="text-center mt-3 mb-0" style="font-size:12px;color:var(--text3);">
+              ¿Ya tenés cuenta? <a href="https://exodocell.netlify.app" style="color:var(--blue);">Ingresar →</a>
+            </p>
+          </div>
+
+          <!-- Estado de éxito -->
+          <div id="registroExito" class="d-none text-center py-3">
+            <div style="width:60px;height:60px;border-radius:50%;background:#f0fdf4;border:2px solid #bbf7d0;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+              <i class="bi bi-check-lg" style="font-size:24px;color:#16a34a;"></i>
+            </div>
+            <h5 class="fw-bold mb-2">¡Cuenta creada!</h5>
+            <p class="text-muted mb-3" style="font-size:14px;">Tu negocio está listo. Tenés 14 días gratis para probarlo.</p>
+            <a href="https://exodocell.netlify.app" class="btn btn-primary px-4 py-2 fw-semibold" style="border-radius:10px;">
+              Ingresar al sistema <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
+    import { getFunctions, httpsCallable } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-functions.js';
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyDY7KSGq14C_vEmsXrtl1uvIp5FEAvRxhk",
+    authDomain: "exodo-bcd73.firebaseapp.com",
+    projectId: "exodo-bcd73",
+    storageBucket: "exodo-bcd73.firebasestorage.app",
+    messagingSenderId: "271443710390",
+    appId: "1:271443710390:web:8327ea40345662bd9bb117"
+  };
+
+    const app = initializeApp(firebaseConfig);
+    const functions = getFunctions(app, 'us-central1');
+
+    const PLAN_NOMBRES = {
+      emprendedor: 'Pequeño Emprendedor — $20.000/mes',
+      pyme:        'Pyme — $35.000/mes',
+      empresa:     'Empresa — $60.000/mes',
+    };
+
+    let planSeleccionado = 'pyme';
+
+    window.abrirRegistro = function(plan) {
+      planSeleccionado = plan;
+      document.getElementById('planNombre').textContent = PLAN_NOMBRES[plan] || plan;
+      document.getElementById('registroForm').classList.remove('d-none');
+      document.getElementById('registroExito').classList.add('d-none');
+      document.getElementById('regError').classList.add('d-none');
+      document.getElementById('regNegocio').value = '';
+      document.getElementById('regEmail').value = '';
+      document.getElementById('regPassword').value = '';
+      new bootstrap.Modal(document.getElementById('modalRegistro')).show();
+    };
+
+    window.registrar = async function() {
+      const negocio  = document.getElementById('regNegocio').value.trim();
+      const email    = document.getElementById('regEmail').value.trim();
+      const password = document.getElementById('regPassword').value;
+      const errDiv   = document.getElementById('regError');
+      const btn      = document.getElementById('btnRegistrar');
+
+      errDiv.classList.add('d-none');
+
+      if (!negocio || !email || !password) {
+        errDiv.textContent = 'Completá todos los campos';
+        errDiv.classList.remove('d-none');
+        return;
+      }
+
+      if (password.length < 6) {
+        errDiv.textContent = 'La contraseña debe tener al menos 6 caracteres';
+        errDiv.classList.remove('d-none');
+        return;
+      }
+
+      btn.disabled = true;
+      btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Creando cuenta...';
+
+      try {
+        const registerBusiness = httpsCallable(functions, 'registerBusiness');
+        await registerBusiness({ email, password, businessName: negocio, plan: planSeleccionado });
+
+        document.getElementById('registroForm').classList.add('d-none');
+        document.getElementById('registroExito').classList.remove('d-none');
+      } catch (e) {
+        let msg = 'Error al crear la cuenta. Intentá de nuevo.';
+        if (e.message?.includes('email-already-in-use')) msg = 'Ese email ya está registrado.';
+        if (e.message?.includes('invalid-email')) msg = 'El email no es válido.';
+        errDiv.textContent = msg;
+        errDiv.classList.remove('d-none');
+        btn.disabled = false;
+        btn.innerHTML = 'Crear cuenta gratis';
+      }
+    };
+  </script>
+
   <!-- JS Custom -->
   <script src="js/main.js"></script>
 
