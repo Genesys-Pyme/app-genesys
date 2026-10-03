@@ -702,24 +702,8 @@
           await new Promise(r => setTimeout(r, 4000));
 
           // Generar link de pago
-          try {
-  const mpRes = await fetch('https://us-central1-exodo-bcd73.cloudfunctions.net/createPaymentLinkPublic', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, plan: planSeleccionado }),
-  });
-  const mpData = await mpRes.json();
-  console.log('MP Status:', mpRes.status, 'Data:', JSON.stringify(mpData));
-  if (mpData.initPoint) {
-    window.location.href = mpData.initPoint;
-  } else {
-    console.error('Sin initPoint:', mpData);
-    window.location.href = 'https://app.genesys.com.ar';
-  }
-} catch (mpErr) {
-  console.error('MP Error:', mpErr.message);
-  window.location.href = 'https://app.genesys.com.ar';
-}
+          // Redirigir al CRM donde SubscriptionGate maneja el pago
+        window.location.href = 'https://app.genesys.com.ar';      
         }
 
       } catch (e) {
