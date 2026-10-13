@@ -35,6 +35,18 @@ body {
   overflow-x: hidden;
 }
 
+.row {
+  --bs-gutter-x: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row > * {
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+
 h1, h2, h3, h4 {
   font-family: 'Space Grotesk', sans-serif;
   letter-spacing: -0.5px;
